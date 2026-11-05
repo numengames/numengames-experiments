@@ -54,7 +54,7 @@ Después, en Settings del repo:
 - **Branch protection** en `main`: requerir PR, CI (`quality`, `a11y`,
   `lighthouse`) y al menos 1 aprobación; prohibir force-push.
 - **Actions**: permisos de solo lectura por defecto (el workflow ya lo declara).
-- **Dependabot**: se activa solo con `.github/dependabot.yml`.
+- **Dependabot**: solo alertas de seguridad (ajustes del repo); sin actualizaciones de versión, un experimento no necesita PR semanales.
 - Completar los `[POR DEFINIR]` de `CODEOWNERS`, `SECURITY.md` y `package.json`
   (URL del repo).
 
