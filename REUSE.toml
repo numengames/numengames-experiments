@@ -1,0 +1,29 @@
+version = 1
+SPDX-PackageName = "numengames-lab"
+SPDX-PackageSupplier = "Numen Games S.L."
+SPDX-PackageDownloadLocation = "https://github.com/numengames/numengames-lab"
+
+# REUSE 3.3 licence map. This repository holds prototypes: per STD-010 they
+# stay ours, all rights reserved (package.json says UNLICENSED, LICENSE says
+# reserved). Third-party files keep their own licence.
+# When several annotations match a file, the LAST one wins: the default comes
+# first, the third-party exceptions after it.
+
+[[annotations]]
+path = "**"
+precedence = "closest"
+SPDX-FileCopyrightText = "2026 Numen Games S.L."
+SPDX-License-Identifier = "LicenseRef-Numen-AllRightsReserved"
+
+# Third-party fonts, self-hosted: SIL Open Font License 1.1 (see NOTICE.md).
+[[annotations]]
+path = ["public/fonts/Geist-Variable.woff2", "public/fonts/GeistMono-Variable.woff2", "public/fonts/LICENSE-Geist.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "2023 Vercel, in collaboration with basement.studio"
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = ["public/fonts/PixelifySans-Variable.woff2", "public/fonts/LICENSE-PixelifySans.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "2021 The Pixelify Sans Project Authors (https://github.com/eifetx/Pixelify-Sans)"
+SPDX-License-Identifier = "OFL-1.1"
